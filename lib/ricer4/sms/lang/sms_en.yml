@@ -1,0 +1,18 @@
+en:
+  ricer4:
+    param:
+      phone:
+        type: "PhoneNumber"
+        hint: "+4917659598844"
+        err_no_country: "does not begin with a country code"
+        err_format: "does not look like a phone number"
+    plugins:
+      sms:
+        sms:
+          trigger: sms
+          description: "Send an sms to a user or an arbitrary phone number."
+          msg_sent: "The SMS has been successfully sent to the provider."
+          err_send: "Error (%{code}): %{error}"
+          err_serv: "Server error: %{error}"
+          
+    
